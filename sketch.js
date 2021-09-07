@@ -22,6 +22,7 @@ function draw() {
     createBoidsArray();
   }
 
+  noStroke();
   textSize(32);
   text(abos.length, 10, 30);
 
