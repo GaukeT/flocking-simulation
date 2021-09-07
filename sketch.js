@@ -52,13 +52,15 @@ function createBoidsArray() {
 function setupSlider() {
   // createSlider(min, max, default, step_size);
   slider = createSlider(5, 250, 200, 5);
-  slider.position(80, 10);
   slider.style('width', '100px');
 
   slider_cohesion = createSlider(0.05, 5, 1, 0.05);
   slider_separation = createSlider(0.05, 5, 1, 0.05);
   slider_alignment = createSlider(0.05, 5, 1, 0.05);
+}
 
+function setupSliderPosition() {
+  slider.position(80, 10);
   slider_cohesion.position(10, windowHeight - 30);
   slider_separation.position(210, windowHeight - 30);
   slider_alignment.position(420, windowHeight - 30);
@@ -66,5 +68,5 @@ function setupSlider() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  setupSliderPosition();
 }
-
