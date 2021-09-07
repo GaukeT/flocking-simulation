@@ -31,9 +31,9 @@ class boid {
     let al = this.alignment(boids);
     let co = this.cohesion(boids);
 	
-//	se.mult(1.02);
-//	al.mult(0.85);
-//	co.mult(0.97);
+	se.mult(slider_separation.value());
+	al.mult(slider_alignment.value());
+	co.mult(slider_cohesion.value());
 		
 	this.applyForce(se);
 	this.applyForce(al);
