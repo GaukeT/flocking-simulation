@@ -57,6 +57,8 @@ function setupSlider() {
   slider_cohesion = createSlider(0.05, 5, 1, 0.05);
   slider_separation = createSlider(0.05, 5, 1, 0.05);
   slider_alignment = createSlider(0.05, 5, 1, 0.05);
+  
+  setupSliderPosition();
 }
 
 function setupSliderPosition() {
